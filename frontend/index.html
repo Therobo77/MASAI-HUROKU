@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO_APP</title>
+    <style>
+        #container>div{
+            border: 5px solid rgb(206, 103, 103);
+            padding: 40px;
+            text-align: center;
+            border-radius: 20%;
+            background-color: rgb(173, 219, 219);
+        }
+        #container{
+            border: none;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 40px;
+            padding: 40px;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <input type="text" name="" id="todo">
+    <button onclick="addTodo()">Add Todo</button>
+    <p id="ttask"></p>
+    </center>
+
+    <div id="container"></div>
+    
+</body>
+</html>
+<script src="main.js"></script>
